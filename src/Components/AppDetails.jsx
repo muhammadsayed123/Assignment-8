@@ -12,6 +12,7 @@ import {
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import useApps from "../Hook/useApps";
+import errorImg from '../assets/pic/error-404.png';
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -37,7 +38,10 @@ const AppDetails = () => {
       </div>
     );
 
-  if (!app) return <p>No App Found</p>;
+  if (!app) return <div className="flex
+  flex-col items-center">
+    <img src={errorImg} alt="" />
+  </div>;
 
   const {
     image,

@@ -10,7 +10,7 @@ const Home = () => {
     const featuredApps = apps.slice(0, 8);
 
     return (
-        <div className='bg-[#D2D2D2]'>
+        <div className=''>
             <Banner></Banner>
             <div className='text-center'>
                 <h1 className='text-3xl font-bold'>Trending Apps</h1>

@@ -10,7 +10,7 @@ const Application = () => {
     const forSearch=term?
     apps.filter(app=>app.title.toLocaleLowerCase().includes(term)):apps
     return (
-        <div className='bg-[#D2D2D2] min-h-screen pb-0'>
+        <div className=' min-h-screen pb-0'>
             <div className='text-center mb-5'>
                 <h2 className='text-3xl font-bold pt-10'>Our All Applications</h2>
                 <p className='mt-2 text-gray-500'>Explore All Apps on the Market developed by us. We code for Millions</p>
@@ -50,7 +50,7 @@ const Application = () => {
                 </div>
             </div>
 
-            <div className='grid grid-cols-2 md:grid-cols-4 gap-4 mt-10 pb-10'>
+            <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-10 pb-10'>
                 {
                     forSearch.map(app => (
                         <Link key={app.id} to={`/app/${app.id}`}>

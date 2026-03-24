@@ -15,8 +15,8 @@ import useApps from "../Hook/useApps";
 
 const AppDetails = () => {
   const { id } = useParams();
-//   const { apps, loading } = useApps();
-const {apps,loading}=useApps
+  //   const { apps, loading } = useApps();
+  const { apps, loading } = useApps();
 
   const app = apps?.find((p) => String(p.id) === id);
   const [isInstalled, setIsInstalled] = useState(false);

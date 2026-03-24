@@ -14,7 +14,7 @@ const AppCard = ({app}) => {
                 <h3>{title}:</h3>
                 <p>{description}</p>
             </div>
-            <div className="flex justify-between text-xs px-2">
+            <div className="flex justify-between text-xs gap-5">
                 <div className="flex items-center gap-1 bg-emerald-50 text-emerald-500 px-2 py-1 rounded-md">
                     <span className="text-xs">⬇</span>
                     <span>{downloads}</span>

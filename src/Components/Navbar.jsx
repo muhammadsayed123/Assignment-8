@@ -54,14 +54,11 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li className="hover:text-[#632EE3] font-semibold">
-            <NavLink to="/">
-              {({ isActive }) => (
-                <a className={isActive ? "active" : ""}>Home</a>
-              )}
-            </NavLink>
+            <NavLink to="/">Home</NavLink>
+            {/* <NavLink to='/' >home</NavLink> */}
           </li>
           <li className="hover:text-[#632EE3] font-semibold">
-            <NavLink to="/apps">App</NavLink>
+            <NavLink to="/apps" >App</NavLink>
           </li>
           <li className="hover:text-[#632EE3] font-semibold">
             <NavLink to="/install">Installation</NavLink>

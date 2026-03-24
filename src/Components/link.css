@@ -1,9 +1,9 @@
-a.active {
-  color: red;
+.active {
+  color: skyblue;
 }
-a.pending {
+/* a.pending {
   color: blue;
 }
 a.transitioning {
   view-transition-name: my-transition;
-}
+} */
